@@ -47,7 +47,7 @@ obligao_urls = [ipauta_href for ipauta_href in ipauta_hrefs if ipauta_href.find(
 
      
 driver_path = os.path.join(os.getcwd(),'chromedriver.exe')
-for url in obligao_urls[62:]:
+for url in obligao_urls[325:]:
     print(url, obligao_urls.index(url))
     driver = start_url_driver(url, driver_path, is_headless=False)
     download = driver.find_element_by_class_name('bicon')
@@ -57,5 +57,5 @@ for url in obligao_urls[62:]:
     time.sleep(1)
     driver.close()
     
+# Remove duplicates (24) (1)
     
-# Last, 61
